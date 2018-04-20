@@ -1,0 +1,16 @@
+{
+    "author": "ObserverOfTime",
+    "version": "0.0.1-dev",
+    "description": "ObserverOfTime's GitHub Page",
+    "license": "Apache-2.0",
+    "homepage": "https://observeroftime.github.io",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ObserverOfTime/observeroftime.github.io.git"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-sass": "^4.0.0",
+        "browser-sync": "^2.23.6"
+    }
+}

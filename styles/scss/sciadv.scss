@@ -1,0 +1,46 @@
+$color-bg: #222;
+$color-fg: #EEE;
+$color-link: #0BF;
+$status-colors: (
+  completed: forestgreen,
+  ongoing: aqua,
+  hiatus: tomato,
+  upcoming: khaki,
+  partial: lightseagreen,
+  discontinued: crimson
+);
+
+#wrapper {
+  background-color: $color-bg;
+  color: $color-fg;
+  font-size: 16px;
+  .desc {
+    font-size: 14px;
+    span {
+      font-weight: bold;
+      &:last-child { text-decoration: underline }
+    }
+  }
+  .category {
+    color: inherit;
+    font-size: 23px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  li { padding-bottom: 3px }
+  .translated { font-weight: bold }
+  .localized {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .note {
+    display: inline-block;
+    padding-left: 8px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  @each $status, $color in $status-colors {
+    .#{$status} .note { color: #{$color} }
+  }
+  .twitter, .milk { color: $color-link }
+}
