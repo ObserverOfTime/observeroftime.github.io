@@ -1,72 +1,72 @@
 #wrapper {
-    background-color: #222;
-    color: #EEE;
-    font-size: 16px;
+  background-color: #222;
+  color: #EEE;
+  font-size: 16px;
 }
 
 #wrapper .desc {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #wrapper .desc span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #wrapper .desc span:last-child {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #wrapper .category {
-    color: inherit;
-    font-size: 23px;
-    font-weight: 600;
-    text-decoration: none;
+  color: inherit;
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 #wrapper li {
-    padding-bottom: 3px;
+  padding-bottom: 3px;
 }
 
 #wrapper .translated {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #wrapper .localized {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #wrapper .note {
-    display: inline-block;
-    padding-left: 8px;
-    font-weight: normal;
-    font-style: italic;
+  display: inline-block;
+  padding-left: 8px;
+  font-weight: normal;
+  font-style: italic;
 }
 
 #wrapper .completed .note {
-    color: forestgreen;
+  color: forestgreen;
 }
 
 #wrapper .ongoing .note {
-    color: aqua;
+  color: aqua;
 }
 
 #wrapper .hiatus .note {
-    color: tomato;
+  color: tomato;
 }
 
 #wrapper .upcoming .note {
-    color: khaki;
+  color: khaki;
 }
 
 #wrapper .partial .note {
-    color: lightseagreen;
+  color: lightseagreen;
 }
 
 #wrapper .discontinued .note {
-    color: crimson;
+  color: crimson;
 }
 
 #wrapper .twitter, #wrapper .milk {
-    color: #0BF;
+  color: #0BF;
 }
