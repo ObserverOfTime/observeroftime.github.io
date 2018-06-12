@@ -1,15 +1,18 @@
 #wrapper {
   background-color: #222;
   color: #EEE;
-  font-size: 16px;
+  font-family: "AvdiraRegular", sans-serif;
+  font-size: larger;
+}
+
+#wrapper h1 {
+  font-size: xx-large;
 }
 
 #wrapper .desc {
-  font-size: 14px;
-}
-
-#wrapper .desc span {
   font-weight: bold;
+  font-size: medium;
+  margin-top: -5px;
 }
 
 #wrapper .desc span:last-child {
@@ -17,14 +20,14 @@
 }
 
 #wrapper .category {
-  color: inherit;
-  font-size: 23px;
   font-weight: 600;
+  font-size: x-large;
+  color: inherit;
   text-decoration: none;
 }
 
 #wrapper li {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 #wrapper .translated {

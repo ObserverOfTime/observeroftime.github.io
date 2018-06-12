@@ -1,0 +1,18 @@
+#wrapper {
+  background-color: #222;
+  color: #EEE;
+  font-family: "OrkneyRegular", sans-serif;
+  font-size: large;
+}
+
+#wrapper h2 {
+  font-size: x-large;
+}
+
+#wrapper li {
+  padding-bottom: 2px;
+}
+
+#wrapper .milk {
+  color: #0BF;
+}

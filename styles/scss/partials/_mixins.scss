@@ -1,0 +1,12 @@
+@mixin font($family: null, $type: 'sans-serif', $weight: null, $size: null, $style: null) {
+  $extra: (weight: $weight, size: $size, style: $style);
+  @if($family) {
+    font-family: quote($family), unquote($type);
+  }
+  @each $key, $val in $extra {
+    @if($val) {
+      font-#{$key}: $val;
+    }
+  }
+}
+
