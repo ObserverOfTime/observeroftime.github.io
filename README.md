@@ -1,8 +1,4 @@
-# [observeroftime.github.io](https://observeroftime.github.io)
-
-[![License][LicenseSVG]](./LICENSE)
-
-**My GitHub Page**
+# [observeroftime.github.io](https://observeroftime.github.io) [![License][LicenseSVG]](./LICENSE)
 
 ## Dev Dependencies [![Status][StatusSVG]][StatusURL]
 
