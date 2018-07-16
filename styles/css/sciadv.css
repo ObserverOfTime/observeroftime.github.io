@@ -70,6 +70,10 @@
   color: crimson;
 }
 
+#wrapper .unknown .note {
+  color: orange;
+}
+
 #wrapper .twitter, #wrapper .milk {
   color: #0BF;
 }
