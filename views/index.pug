@@ -1,0 +1,15 @@
+include mixins.pug
+
+doctype html
+html
+  head
+    +utf8()
+    +generator()
+    +favicon('https://avatars1.githubusercontent.com/u/24971970', 'jpeg')
+    +stylesheet('https://fontlibrary.org/face/orkney')
+    +stylesheet('/styles/main.css')
+    title SciADV Lists
+  body#wrapper
+    h2 SciADV Lists
+    +milk()
+

@@ -1,0 +1,13 @@
+include ../mixins.pug
+
+doctype html
+html
+  head
+    +utf8()
+    +generator()
+    +favicon('https://cdn.discordapp.com/emojis/324403123169001482.png', 'png')
+    +stylesheet('https://fontlibrary.org/face/avdira-textfonts')
+    +stylesheet('/styles/sciadv.css')
+    title SciADV Lists
+  body#wrapper
+    +milk(true)

@@ -1,18 +1,21 @@
 module.exports = (grunt) ->
   paths =
     config:
-      htmlhint: './config/htmlhintrc.json'
+      puglint: './config/puglintrc.json'
       stylelint: './config/stylelintrc.json'
     code:
-      css: './styles/css/*.css'
+      css: './styles/*.css'
       html:
         root: './index.html'
         sciadv: './SciADVLists/*.html'
+      pug:
+        root: './views/index.pug'
+        sciadv: './views/SciADVLists/*.pug'
       scss:
-        full: './styles/scss/*.scss'
-        part: './styles/scss/partials/*.scss'
+        full: './scss/*.scss'
+        part: './scss/partials/*.scss'
       allFiles: -> @noPartials().concat [@scss.part]
-      noPartials: -> Object.values(@html).concat [@css, @scss.full]
+      noPartials: -> Object.values(@html).concat [@css, @pug, @scss.full]
   pkg = require './package'
 
   grunt.initConfig
@@ -21,7 +24,7 @@ module.exports = (grunt) ->
         notify: false
         watchTask: true
         host: 'localhost'
-        server: './'
+        server: './docs'
         snippetOptions: rule:
           match: /<\/head>/i
           fn: (snippet) => snippet
@@ -31,13 +34,23 @@ module.exports = (grunt) ->
       html: reload: Object.values paths.code.html
     concurrent:
       options: logConcurrentOutput: true
-      lint: ['stylelint', 'htmlhintplus']
-    htmlhintplus:
-      options:
-        htmlhintrc: paths.config.htmlhint
-        output: ['console']
-        newer: true
-      html: Object.values paths.code.html
+      lint: ['stylelint', 'puglint']
+      build: ['sass', 'pug']
+    pug:
+      options: pretty: true
+      dist: files: [
+        expand: true
+        cwd: 'views'
+        src: [
+          '**/*.pug',
+          '!mixins.pug'
+        ]
+        dest: ''
+        ext: '.html'
+      ]
+    puglint: pug:
+      options: extends: paths.config.puglint
+      src: ['./views/**/*.pug']
     sass:
       options:
         implementation: require 'node-sass'
@@ -46,30 +59,35 @@ module.exports = (grunt) ->
         indentWidth: 2
         linefeed: 'lf'
         sourceMap: false
-      dist: files:
-        './styles/css/main.css': './styles/scss/main.scss'
-        './styles/css/sciadv.css': './styles/scss/sciadv.scss'
+      dist: files: [
+        expand: true
+        cwd: 'scss'
+        src: [
+          '**/*.scss',
+          '!partials/*.scss'
+        ]
+        dest: 'styles'
+        ext: '.css'
+      ]
     stylelint: scss:
       options:
         configFile: paths.config.stylelint
         formatter: 'string'
         failOnError: true
         syntax: 'scss'
-      src: paths.code.scss.full
+      src: Object.values paths.code.scss
     watch:
       options: spawn: false
+      pug:
+        files: Object.values paths.code.pug
+        tasks: ['pug:dist', 'bsReload:html']
       scss:
         files: paths.code.scss.full
         tasks: ['sass:dist', 'bsReload:css']
-      html:
-        files: Object.values paths.code.html
-        tasks: ['htmlhintplus', 'bsReload:html']
 
   Object.keys(pkg.devDependencies).filter (dep) =>
     grunt.loadNpmTasks dep if dep.startsWith 'grunt-'
 
-  grunt.registerTask 'build', ['sass']
-  grunt.registerTask 'lint', ['concurrent:lint']
   grunt.registerTask 'default', ['browserSync', 'watch']
   return
 

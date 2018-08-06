@@ -9,71 +9,75 @@
   font-size: xx-large;
 }
 
-#wrapper .desc {
+#wrapper li {
+  padding-bottom: 2px;
+}
+
+.desc {
   font-weight: bold;
   font-size: medium;
   margin-top: -5px;
 }
 
-#wrapper .desc span:last-child {
+.desc span:last-child {
   text-decoration: underline;
 }
 
-#wrapper .category {
+.category {
   font-weight: 600;
   font-size: x-large;
   color: inherit;
   text-decoration: none;
 }
 
-#wrapper li {
-  padding-bottom: 2px;
-}
-
-#wrapper .translated {
+.translated {
   font-weight: bold;
 }
 
-#wrapper .localized {
+.localized {
   font-weight: bold;
   text-decoration: underline;
 }
 
-#wrapper .note {
+.note {
   display: inline-block;
   padding-left: 8px;
   font-weight: normal;
   font-style: italic;
 }
 
-#wrapper .completed .note {
+.completed .note {
   color: forestgreen;
 }
 
-#wrapper .ongoing .note {
+.ongoing .note {
   color: aqua;
 }
 
-#wrapper .hiatus .note {
+.hiatus .note {
   color: tomato;
 }
 
-#wrapper .upcoming .note {
+.upcoming .note {
   color: khaki;
 }
 
-#wrapper .partial .note {
+.partial .note {
   color: lightseagreen;
 }
 
-#wrapper .discontinued .note {
+.discontinued .note {
   color: crimson;
 }
 
-#wrapper .unknown .note {
+.unknown .note {
   color: orange;
 }
 
-#wrapper .twitter, #wrapper .milk {
+.twitter, .milk {
   color: #0BF;
+}
+
+#lists a {
+  margin-right: 10px;
 }

@@ -1,0 +1,43 @@
+mixin utf8()
+  meta(http-equiv="content-type" content="text/html; charset=UTF-8")
+
+mixin generator()
+  meta(name="generator" content="grunt-contrib-pug v1.0.0")
+
+mixin stylesheet(href)
+  link(href=href rel="stylesheet" type="text/css")
+
+mixin favicon(href, type)
+  link(href=href rel="shortcut icon" type=`image/${type}`)
+
+mixin desc()
+  p.desc
+    span (Bold = translated in English)
+    br
+    span (Underlined = officially localized)
+
+mixin footer()
+  p: em The list does not include: fanmade stuff, soundtracks, artbooks, and any other merch.
+  p: a(style={color: 'green'} href='..') Go back
+
+mixin milk(nav)
+  - var path = nav ? '.' : 'SciADVLists'
+  -
+    var titles = [
+      'Chaos;Head',
+      'Steins;Gate',
+      'Robotics;Notes',
+      'Chaos;Child'
+    ]
+  if nav
+    nav#lists
+      each val in titles
+        a.milk(href=`${path}/${val.replace(';', '')}Milk.html`)= val
+  else
+    ul
+      each val in titles
+        li: a.milk(href=`${path}/${val.replace(';', '')}Milk.html`)= val
+
+mixin twitter(username, content)
+  li: a.twitter(href=`https://twitter.com/${username}` rel="noopener" target="_blank")= content
+

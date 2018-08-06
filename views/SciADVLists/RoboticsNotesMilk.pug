@@ -1,0 +1,68 @@
+include ../mixins.pug
+
+doctype html
+html
+  head
+    +utf8()
+    +generator()
+    +favicon('https://cdn.discordapp.com/emojis/324403123169001482.png', 'png')
+    +stylesheet('https://fontlibrary.org/face/avdira-textfonts')
+    +stylesheet('/styles/sciadv.css')
+    title Robotics;Notes Milk
+  body#wrapper
+    h1 Robotics;Notes Material
+    +desc()
+    #visual-novels
+      a.category(href='#visual-novels') Visual Novels
+      ul
+        li.untranslated Robotics;Notes
+        li.untranslated Robotics;Notes Elite
+        li.unreleased
+          | Robotics;Notes DaSH
+          span.note (upcoming)
+    #anime
+      a.category(href='#anime') Anime
+      ul
+        li.localized.completed Robotics;Notes
+    #manga
+      a.category(href='#manga') Manga
+      ul
+        li.translated.hiatus
+          | Robotics;Notes
+          span.note (translation on hiatus)
+        li.translated.completed Robotics;Notes - The Unpublished Memoirs of Senomiya Misaki
+        li.translated.completed Robotics;Notes - Revival Legacy
+        li.untranslated Robotics;Notes - Dream Seeker
+        li.untranslated Robotics;Notes - Phantom Snow
+        li.untranslated Robotics;Notes - Pleiades Ambition
+        li.untranslated Robotics;Notes - Side Juuna: The Story of a Little Summer
+        li.untranslated Robotics;Notes - Merry Christmas
+        li.untranslated Robotics;Notes - Magi-Cu 4-koma
+        li.untranslated Robotics;Notes - Dengeki Comic Anthology
+    #light-novels
+      a.category(href='#light-novels') Light Novels & Short Stories
+      ul
+        li.untranslated Robotics;Notes
+        li.untranslated Robotics;Notes - Robotics Notes
+        li.untranslated Robotics;Notes - The Unpublished Memoirs of Senomiya Misaki
+        li.untranslated Robotics;Notes - Project Pleiades
+        li.untranslated Science Adventure Series 5 Years Jubilee Crossover - Tomorrow in the Box
+    #dramas
+      a.category(href='#dramas') Drama CDs & Radio Shows
+      ul
+        li.untranslated Robotics;Notes Epilogue - At the End of the Dream
+        li.translated.completed Robotics;Notes Drama CD - A Day in the Life of Frau Koujiro
+        li.untranslated Science Adventure Series Special Drama CD - Triptych of an Abrupt Chain
+        li.untranslated Robotics;Notes Radio - Dreams of the Real Robot Club's Kids
+        li.untranslated Robotics;Notes Radio Station
+    #misc
+      a.category(href='#misc') Misc
+      ul
+        li.untranslated Robotics;Notes Stage Play
+    #contrib
+      a.category(href='#contrib') Contributors:
+      ul
+        +twitter('chronobserver', 'Observer of Time')
+        +twitter('TehVict', 'TehVict')
+    +footer()
+

@@ -1,0 +1,64 @@
+include ../mixins.pug
+
+doctype html
+html
+  head
+    +utf8()
+    +generator()
+    +favicon('https://cdn.discordapp.com/emojis/324403123169001482.png', 'png')
+    +stylesheet('https://fontlibrary.org/face/avdira-textfonts')
+    +stylesheet('/styles/sciadv.css')
+    title Chaos;Head Milk
+  body#wrapper
+    h1 Chaos;Head Material
+    +desc()
+    #visual-novels
+      a.category(href='#visual-novels') Visual Novels
+      ul
+        li.translated.completed Chaos;Head
+        li.translated.upcoming
+          | Chaos;Head Noah
+          span.note (translation upcoming)
+        li.untranslated Chaos;Head Love Chu Chu
+    #anime
+      a.category(href='#anime') Anime
+      ul
+        li.localized.completed Chaos;Head
+        li.localized.completed Chaos;Child Episode 0
+    #manga
+      a.category(href='#manga') Manga
+      ul
+        li.translated.completed Chaos;Head
+        li.translated.hiatus
+          | Chaos;Head - Blue Complex
+          span.note  (translation on hiatus)
+        li.untranslated Chaos;Head H
+        li.untranslated Chaos;Head Love Chu Chu
+        li.untranslated Chaos;Head Official Comic Anthology - Compilation of Rampaging Delusions
+    #light-novels
+      a.category(href='#light-novels') Light Novels & Short Stories
+      ul
+        li.untranslated Chaos;Head
+        li.untranslated Chaos;Head - Delusion of Zero
+        li.translated.partial
+          | Chaos;Head x Steins;Gate Crossover - Chaos;Gate
+          span.note  (partially translated)
+        li.untranslated Science Adventure Series 5 Years Jubilee Crossover - Tomorrow in the Box
+        li.untranslated Blood Tune The Novelization
+    #dramas
+      a.category(href='#dramas') Drama CDs & Radio Shows
+      ul
+        li.untranslated Chaos;Head - The Parallel Bootleg
+        li.untranslated Science Adventure Series Special Drama CD - Triptych of an Abrupt Chain
+        li.untranslated Chaos;Head Radio - Delusion Radio Station
+        li.untranslated Radio Chaos;Head Love x 2 - Warning: Addictive
+        li.untranslated Radio Chaos;Head³ Love x 2 - Warning: Addictive
+    #misc
+      a.category(href='#misc') Misc
+      blockquote N/A
+    #contrib
+      a.category(href='#contrib') Contributors:
+      ul
+        +twitter('chronobserver', 'Observer of Time')
+    +footer()
+

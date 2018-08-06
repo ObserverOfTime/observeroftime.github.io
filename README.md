@@ -6,10 +6,12 @@
 - [grunt](https://ghub.io/grunt): The JavaScript Task Runner
 - [grunt-browser-sync](https://ghub.io/grunt-browser-sync): Live CSS reload &amp; Browser Syncing
 - [grunt-concurrent](https://ghub.io/grunt-concurrent): Run grunt tasks concurrently
+- [grunt-contrib-pug](https://ghub.io/grunt-contrib-pug): Compile Pug templates
 - [grunt-contrib-watch](https://ghub.io/grunt-contrib-watch): Run predefined tasks whenever watched file patterns are added, changed or deleted
-- [grunt-htmlhint-plus](https://ghub.io/grunt-htmlhint-plus): Grunt task to hint html code.
+- [grunt-puglint](https://ghub.io/grunt-puglint): Grunt plugin for pug-lint
 - [grunt-sass](https://ghub.io/grunt-sass): Compile Sass to CSS using node-sass
 - [grunt-stylelint](https://ghub.io/grunt-stylelint): A Grunt checker for CSS files using Stylelint
+- [node-sass](https://ghub.io/node-sass): Wrapper around libsass
 - [stylelint](https://ghub.io/stylelint): A mighty, modern CSS linter.
 - [stylelint-scss](https://ghub.io/stylelint-scss): A collection of SCSS specific rules for stylelint
 

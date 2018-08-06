@@ -1,0 +1,67 @@
+include ../mixins.pug
+
+doctype html
+html
+  head
+    +utf8()
+    +generator()
+    +favicon('https://cdn.discordapp.com/emojis/324403123169001482.png', 'png')
+    +stylesheet('https://fontlibrary.org/face/avdira-textfonts')
+    +stylesheet('/styles/sciadv.css')
+    title Chaos;Child Milk
+  body#wrapper
+    h1 Chaos;Child Material
+    +desc()
+    #visual-novels
+      a.category(href='#visual-novels') Visual Novels
+      ul
+        li.localized.completed Chaos;Child
+        li.untranslated.completed Chaos;Child Love Chu Chu
+    #anime
+      a.category(href='#anime') Anime
+      ul
+        li.localized.completed Chaos;Child
+        li.localized.completed Chaos;Child Episode 0
+        li.localized.completed Chaos;Child - Silent Sky
+    #manga
+      a.category(href='#manga') Manga
+      ul
+        li.untranslated Chaos;Child
+        li.translated.completed Chaos;Child - Comic Trailer
+        li.untranslated Chaos;Child - Children's Collapse
+    #light-novels
+      a.category(href='#light-novels') Light Novels & Short Stories
+      ul
+        li.untranslated Chaos;Child - Children's Revive
+        li.untranslated Chaos;Child - The Memoirs of a Certain Wrong-Sider
+        li.untranslated Chaos;Child - Children's Collapse - First Time Setting Off
+        li.translated.completed Chaos;Child Anime Side Story - Day to Day Lives of the Chaos Children
+        li.untranslated Chaos;Child 5pb. Festival 2016 Limited Short Story
+    #dramas
+      a.category(href='#dramas') Drama CDs & Radio Shows
+      ul
+        li.untranslated Chaos;Child Prologue - The Day of the Beginning
+        li.untranslated Chaos;Child Drama CD - A Tardy Fool Dozing Off - Fools
+        li.untranslated Chaos;Child Drama CD - Onoe Serika - Do Takuru and Serika Dream of Sumo Stickers?
+        li.untranslated Chaos;Child Drama CD - Kurusu Nono - The Vacation of a Certain Wrong-Sider
+        li.untranslated Chaos;Child Drama CD - Arimura Hinae - Pursue the Mystery of the Seven Wonders of Shibuya
+        li.untranslated Chaos;Child Drama CD - Yamazoe Uki - Not a Black Leather Notebook
+        li.untranslated Chaos;Child Drama CD - Kazuki Hana - Contagious Gigalomania
+        li.untranslated Chaos;Child Drama CD - Kunosato Mio - The Angel's Atonement
+        li.untranslated Chaos;Child Drama CD - Onoe Serika - Wish
+        li.untranslated Chaos;Child Silent Sky Drama CD - Onoe Serika - Dream
+        li.untranslated Chaos;Child Drama CD - The Secluded Valley Path
+        li.translated.completed Chaos;Child - Miyashiro Takuru Monologue - The Right-sider Connects the Cases
+        li.untranslated Chaos;Child Love Chu Chu - Onoe Serika Monologue - An Innocent Sleep-Inducing Melody
+        li.untranslated Chaos;Child Love Chu Chu - Kurusu Nono Monologue - The Sleep-Inducing Tune of Peace
+    #misc
+      a.category(href='#misc') Misc
+      blockquote N/A
+    #contrib
+      a.category(href='#contrib') Contributors:
+      ul
+        +twitter('5zzb', 'Mouse')
+        +twitter('chronobserver', 'Observer of Time')
+        +twitter('RainAnnen', 'Rain')
+    +footer()
+
