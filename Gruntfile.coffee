@@ -21,10 +21,11 @@ module.exports = (grunt) ->
   grunt.initConfig
     browserSync: serve:
       options:
+        ui: false
         notify: false
         watchTask: true
         host: 'localhost'
-        server: './docs'
+        server: './'
         snippetOptions: rule:
           match: /<\/head>/i
           fn: (snippet) => snippet

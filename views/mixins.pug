@@ -2,7 +2,7 @@ mixin utf8()
   meta(http-equiv="content-type" content="text/html; charset=UTF-8")
 
 mixin generator()
-  meta(name="generator" content="grunt-contrib-pug v1.0.0")
+  meta(name="generator" content="grunt-contrib-pug v2.0.0")
 
 mixin stylesheet(href)
   link(href=href rel="stylesheet" type="text/css")
@@ -17,8 +17,10 @@ mixin desc()
     span (Underlined = officially localized)
 
 mixin footer()
-  p: em The list does not include: fanmade stuff, soundtracks, artbooks, and any other merch.
-  p: a(style={color: 'green'} href='..') Go back
+  p: em
+    | The list does not include: fanmade stuff,
+    | soundtracks, artbooks, and any other merch.
+  p: a(style={color: "green"} href="..") Go back
 
 mixin milk(nav)
   - var path = nav ? '.' : 'SciADVLists'
@@ -39,5 +41,6 @@ mixin milk(nav)
         li: a.milk(href=`${path}/${val.replace(';', '')}Milk.html`)= val
 
 mixin twitter(username, content)
-  li: a.twitter(href=`https://twitter.com/${username}` rel="noopener" target="_blank")= content
+  li: a.twitter(href=`https://twitter.com/${username}`
+                rel="noopener" target="_blank")= content
 
