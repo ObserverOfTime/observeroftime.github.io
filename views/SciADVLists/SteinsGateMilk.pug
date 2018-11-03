@@ -4,6 +4,7 @@ doctype html
 html
   head
     +utf8()
+    +lastmod()
     +generator()
     +favicon('https://cdn.discordapp.com/emojis/324403123169001482.png', 'png')
     +stylesheet('https://fontlibrary.org/face/avdira-textfonts')
@@ -25,7 +26,7 @@ html
         li.localized.upcoming
           | Steins;Gate Elite
           span.note (localization upcoming)
-        li.untranslated.upcoming
+        li.localized.upcoming
           | 8-bit ADV Steins;Gate
           span.note (localization upcoming)
     #anime
@@ -39,9 +40,9 @@ html
         li.localized.completed
           | Steins;Gate Episode 23(&beta;) - Open the Missing Link
         li.localized.completed Steins;Gate 0
-        li.untranslated.upcoming
+        li.upcoming
           | Steins;Gate 0 Special
-          span.note (upcoming, localization upcoming)
+          span.note (upcoming)
     #manga
       a.category(href="#manga") Manga
       ul
@@ -149,6 +150,9 @@ html
         li.translated.competed
           | Steins;Gate 0 – Shiina Mayuri Monologue –
           | Puddle of Tearful Rain
+        li.translated.competed
+          | Steins;Gate 0 – Makise Kurisu Monologue –
+          | Aria of the Starlight
         li.untranslated
           | Steins;Gate 0 Drama CD - Paradise Lost in Adaptive Radiation
         li.untranslated Steins;Gate 0 Drama CD - Blended Coffee Encounter

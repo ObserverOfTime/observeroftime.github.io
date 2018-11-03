@@ -1,8 +1,11 @@
 mixin utf8()
-  meta(http-equiv="content-type" content="text/html; charset=UTF-8")
+  meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
 
 mixin generator()
   meta(name="generator" content="grunt-contrib-pug v2.0.0")
+
+mixin lastmod()
+  meta(http-equiv="Last-Modified" content=new Date().toGMTString())
 
 mixin stylesheet(href)
   link(href=href rel="stylesheet" type="text/css")
