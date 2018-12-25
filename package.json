@@ -1,7 +1,7 @@
 {
   "name": "observeroftime.github.io",
   "author": "ObserverOfTime",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
   "homepage": "https://observeroftime.github.io",
@@ -20,9 +20,9 @@
     "grunt-puglint": "^1.0.0",
     "grunt-sass": "^3.0.1",
     "grunt-stylelint": "^0.10.0",
-    "node-sass": "^4.9.4",
-    "stylelint": "^9.7.1",
-    "stylelint-scss": "^3.3.2"
+    "node-sass": "^4.11.0",
+    "stylelint": "^9.9.0",
+    "stylelint-scss": "^3.4.3"
   },
   "scripts": {
     "build": "grunt concurrent:build",
