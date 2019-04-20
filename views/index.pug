@@ -1,4 +1,4 @@
-include mixins.pug
+include _mixins.pug
 
 doctype html
 html
@@ -9,8 +9,7 @@ html
     +favicon('https://avatars1.githubusercontent.com/u/24971970', 'jpeg')
     +stylesheet('https://fontlibrary.org/face/orkney')
     +stylesheet('/styles/main.css')
-    title SciADV Lists
+    title Home ~ Observer of Time
   body#wrapper
-    h2 SciADV Lists
-    +milk()
+    include:markdown-it ../README.md
 

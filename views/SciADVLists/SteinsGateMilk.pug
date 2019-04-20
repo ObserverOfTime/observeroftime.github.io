@@ -1,4 +1,4 @@
-include ../mixins.pug
+include ../_mixins.pug
 
 doctype html
 html
@@ -20,21 +20,16 @@ html
         li.localized.completed Steins;Gate 0
         li.translated.completed Steins;Gate Octet of Spatial Mutation
         li.untranslated Steins;Gate Darling of Loving Vows
-        li.localized.upcoming
-          | Steins;Gate Linear Bounded Phenogram
-          span.note (localization upcoming)
-        li.localized.upcoming
-          | Steins;Gate Elite
-          span.note (localization upcoming)
-        li.localized.upcoming
-          | 8-bit ADV Steins;Gate
-          span.note (localization upcoming)
+        li.localized.completed Steins;Gate Linear Bounded Phenogram
+        li.localized.completed Steins;Gate Elite
+        li.localized.completed 8-bit ADV Steins;Gate
     #anime
       a.category(href="#anime") Anime
       ul
         li.localized.completed Steins;Gate
         li.localized.completed Steins;Gate - Egoistic Poriomania
-        li.localized.completed Steins;Gate - The Movie - Load Region of Déjà Vu
+        li.localized.completed
+          | Steins;Gate - The Movie - Load Region of D&eacute;j&agrave; Vu
         li.localized.completed
           | Steins;Gate - The Sagacious Wisdom of Cognitive Computing
         li.localized.completed
@@ -47,7 +42,7 @@ html
       a.category(href="#manga") Manga
       ul
         li.localized.completed Steins;Gate
-        li.untranslated Steins;Gate - Burdened Domain of Déjà Vu
+        li.untranslated Steins;Gate - Load Region of D&eacute;j&agrave; Vu
         li.translated.hiatus
           | Steins;Gate 0
           span.note (ongoing, translation on hiatus)
@@ -94,7 +89,7 @@ html
       ul
         li.untranslated Steins;Gate - Annularly-Chained Ouroboros
         li.translated.completed Steins;Gate - The Distant Valhalla
-        li.untranslated Steins;Gate - Burdened Domain of Déjà Vu
+        li.untranslated Steins;Gate - Load Region of D&eacute;j&agrave; Vu
         li.untranslated Steins;Gate Movie Side Stories
         li.untranslated Steins;Gate - Epigraph Trilogy
         li.translated.hiatus
@@ -132,11 +127,17 @@ html
           | Steins;Gate Comptiq Original Drama CD, October 2011
         li.translated.completed
           | Steins;Gate Comp Ace Original Drama CD, November 2011
+        li.translated.completed Steins;Gate New Year Drama CDs
         li.translated.completed
           | Steins;Gate Movie Drama CD - Inevitable Blushing Gossip
+        li.translated.completed
+          | Steins;Gate Drama CD - Hot Springs of the Royal Road Balance
+        li.translated.completed
+          | Steins;Gate Drama CD - The Disappearance of Hououin Kyouma
         li.untranslated
-          | Steins;Gate Movie Drama CD - Fractal of Unexpressed Thought Material
-        li.untranslated
+          | Steins;Gate Movie Drama CD -
+          | Fractal of Unexpressed Thought Material
+        li.translated.completed
           | Steins;Gate Movie Drama CD - A Posteriori Existence
         li.translated.completed
           | Steins;Gate Movie Drama CD -
@@ -147,38 +148,53 @@ html
         li.translated.completed
           | Steins;Gate 0 - Amadeus Kurisu Monologue -
           | Amadeus of the Silent Requiem
-        li.translated.competed
+        li.translated.completed
           | Steins;Gate 0 – Shiina Mayuri Monologue –
           | Puddle of Tearful Rain
-        li.translated.competed
+        li.translated.completed
           | Steins;Gate 0 – Makise Kurisu Monologue –
           | Aria of the Starlight
-        li.untranslated
+        li.translated.completed
           | Steins;Gate 0 Drama CD - Paradise Lost in Adaptive Radiation
-        li.untranslated Steins;Gate 0 Drama CD - Blended Coffee Encounter
+        li.translated.completed
+          | Steins;Gate 0 Drama CD - Feast of the Valkyries
+        li.translated.completed
+          | Steins;Gate 0 Drama CD - Blended Coffee Encounter
+        li.translated.completed
+          | Steins;Gate Drama CD - Epitaxy of the Projected Curved Surface
+        li.translated.completed
+          | Steins;Gate Drama CD - Pandemia of Artificial Machinery
         li.translated.ongoing
-          | Steins;Gate Epigraph Trilogy Drama CDs
+          | Steins;Gate Drama CD - Arpeggio of Time's Rotation
           span.note (translation ongoing)
-        li.untranslated
-          | Steins;Gate Epigraph of the Closed Curve Extract Scenes Drama CD
+        li.translated.completed
+          | Steins;Gate Epigraph of the Closed Curve Extract Scenes
         li.translated.completed
           | Steins;Gate Drama CD - The Hashida Familia's Love and Affection
-        li.translated.ongoing
+        li.translated.completed
           | Steins;Gate Drama CD - The Perpetually Infinite Hashida Concerto
-          span.note (translation ongoing)
         li.translated.ongoing
-          | Steins;Gate 0 Drama CD - Runaway of the free particles
+          | Steins;Gate Drama CD - The Dog Days of Hashida Comima
           span.note (translation ongoing)
-        li.translated.completed Steins;Gate Character Songs
+        li.translated.completed
+          | Steins;Gate 0 Drama CD - Runaway of the Free Particles
         li.translated.completed
           | Steins;Gate Anthology Drama CD - Reunion of the Hallucinated Space
-        li.untranslated
+        li.translated.completed
           | Steins;Gate Anthology Drama CD - Vacation of an Ephemeral Silhouette
-        li.untranslated
+        li.translated.partial
           | Science Adventure Series Special Drama CD -
           | Triptych of an Abrupt Chain
-        li.untranslated Steins;Gate - Future Gadget Radio Shows
-        li.translated.completed Steins;Gate - Labmem Round Table Meetings
+          span.note (partially translated)
+        li.translated.ongoing
+          | Steins;Gate Drama CD Audio Series - Laboratory Members
+          span.note (translation ongoing)
+        li.translated.completed Steins;Gate Character Songs
+        li.translated.partial
+          | Steins;Gate - Future Gadget Radio Shows
+          span.note (partially translated)
+        li.translated.completed
+          | Steins;Gate - Laboratory Member Round Table Meetings
     #misc
       a.category(href="#misc") Misc
       ul

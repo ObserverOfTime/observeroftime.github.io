@@ -13,6 +13,7 @@ mixin stylesheet(href)
 mixin favicon(href, type)
   link(href=href rel="shortcut icon" type=`image/${type}`)
 
+//- SciADVLists {{{
 mixin desc()
   p.desc
     span (Bold = translated in English)
@@ -25,25 +26,8 @@ mixin footer()
     | soundtracks, artbooks, and any other merch.
   p: a(style={color: "green"} href="..") Go back
 
-mixin milk(nav)
-  - var path = nav ? '.' : 'SciADVLists'
-  -
-    var titles = [
-      'Chaos;Head',
-      'Steins;Gate',
-      'Robotics;Notes',
-      'Chaos;Child'
-    ]
-  if nav
-    nav#lists
-      each val in titles
-        a.milk(href=`${path}/${val.replace(';', '')}Milk.html`)= val
-  else
-    ul
-      each val in titles
-        li: a.milk(href=`${path}/${val.replace(';', '')}Milk.html`)= val
-
 mixin twitter(username, content)
   li: a.twitter(href=`https://twitter.com/${username}`
                 rel="noopener" target="_blank")= content
+//- }}}
 

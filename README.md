@@ -1,21 +1,34 @@
-# [observeroftime.github.io](https://observeroftime.github.io) [![License][LicenseSVG]](./LICENSE)
+### Table of Contents
 
-## Dev Dependencies [![Status][StatusSVG]][StatusURL]
+* [Portfolio (coming soon)](https://observeroftime.github.io/portfolio/)
+* [7 Segment Displays](https://observeroftime.github.io/7SegmentDisplays/)
+  - [Benchmarks](https://observeroftime.github.io/7SegmentDisplays/BENCHMARKS.html)
+  - [Contributing](https://observeroftime.github.io/7SegmentDisplays/CONTRIBUTING.html)
+* [Discord Themes](https://observeroftime.github.io/DiscordThemes/)
+  - [New Nihilism](https://observeroftime.github.io/DiscordThemes/NewNihilism/)
+  - [Restore Titlebar](https://observeroftime.github.io/DiscordThemes/MiniThemes/RestoreTitlebar/)
+* [Transfer.js Docs](https://observeroftime.github.io/transfer.js/)
+* [SciADV Lists](https://observeroftime.github.io/SciADVLists/)
+  - [Chaos;Head](https://observeroftime.github.io/SciADVLists/ChaosHeadMilk.html)
+  - [Steins;Gate](https://observeroftime.github.io/SciADVLists/SteinsGateMilk.html)
+  - [Robotics;Notes](https://observeroftime.github.io/SciADVLists/RoboticsNotesMilk.html)
+  - [Chaos;Child](https://observeroftime.github.io/SciADVLists/ChaosChildMilk.html)
 
-- [browser-sync](https://ghub.io/browser-sync): Live CSS Reload &amp; Browser Syncing
-- [grunt](https://ghub.io/grunt): The JavaScript Task Runner
-- [grunt-browser-sync](https://ghub.io/grunt-browser-sync): Live CSS reload &amp; Browser Syncing
-- [grunt-concurrent](https://ghub.io/grunt-concurrent): Run grunt tasks concurrently
-- [grunt-contrib-pug](https://ghub.io/grunt-contrib-pug): Compile Pug templates
-- [grunt-contrib-watch](https://ghub.io/grunt-contrib-watch): Run predefined tasks whenever watched file patterns are added, changed or deleted
-- [grunt-puglint](https://ghub.io/grunt-puglint): Grunt plugin for pug-lint
-- [grunt-sass](https://ghub.io/grunt-sass): Compile Sass to CSS using node-sass
-- [grunt-stylelint](https://ghub.io/grunt-stylelint): A Grunt checker for CSS files using Stylelint
-- [node-sass](https://ghub.io/node-sass): Wrapper around libsass
-- [stylelint](https://ghub.io/stylelint): A mighty, modern CSS linter.
-- [stylelint-scss](https://ghub.io/stylelint-scss): A collection of SCSS specific rules for stylelint
+### License
 
-[LicenseSVG]: https://img.shields.io/badge/License-Apache--2.0-orange.svg
-[StatusSVG]: https://david-dm.org/ObserverOfTime/observeroftime.github.io/dev-status.svg
-[StatusURL]: https://david-dm.org/ObserverOfTime/observeroftime.github.io?type=dev
+```
+Copyright © 2019 ObserverOfTime
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
 

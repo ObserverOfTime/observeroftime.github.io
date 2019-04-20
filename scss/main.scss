@@ -5,8 +5,12 @@
   background-color: $color-bg;
   color: $color-fg;
   @include font($family: 'OrkneyRegular', $size: large);
-  h2 { font-size: x-large }
+  a {
+    color: khaki;
+    text-decoration: none;
+    &:visited { color: chocolate }
+  }
+  img { vertical-align: middle }
   li { padding-bottom: 2px }
-  .milk { color: $color-link }
 }
 

@@ -1,4 +1,4 @@
-include ../mixins.pug
+include ../_mixins.pug
 
 doctype html
 html
@@ -11,5 +11,14 @@ html
     +stylesheet('/styles/sciadv.css')
     title SciADV Lists
   body#wrapper
-    +milk(true)
+    -
+      var titles = [
+        'Chaos;Head',
+        'Steins;Gate',
+        'Robotics;Notes',
+        'Chaos;Child'
+      ]
+    nav#lists
+      each val in titles
+        a.milk(href=`./${val.replace(';', '')}Milk.html`)= val
 

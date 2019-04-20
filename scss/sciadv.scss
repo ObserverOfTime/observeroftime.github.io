@@ -6,7 +6,14 @@
   color: $color-fg;
   @include font($family: 'AvdiraRegular', $size: larger);
   h1 { font-size: xx-large }
+  h2 { font-size: x-large }
   li { padding-bottom: 2px }
+  .milk { color: $color-link }
+}
+
+#lists a {
+  display: block;
+  padding: 5px;
 }
 
 .desc {
@@ -35,10 +42,8 @@
 }
 
 @each $status, $color in $status-colors {
-  .#{$status} .note { color: #{$color} }
+  .#{$status} .note { color: $color }
 }
 
 .twitter, .milk { color: $color-link }
-
-#lists a { margin-right: 10px }
 

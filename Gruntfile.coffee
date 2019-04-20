@@ -8,9 +8,11 @@ module.exports = (grunt) ->
       html:
         root: './index.html'
         sciadv: './SciADVLists/*.html'
+        # portfolio: './portfolio/*.html'
       pug:
         root: './views/index.pug'
         sciadv: './views/SciADVLists/*.pug'
+        # portfolio: './views/portfolio/*.pug'
       scss:
         full: './scss/*.scss'
         part: './scss/partials/*.scss'
@@ -44,7 +46,7 @@ module.exports = (grunt) ->
         cwd: 'views'
         src: [
           '**/*.pug',
-          '!mixins.pug'
+          '!_mixins.pug'
         ]
         dest: ''
         ext: '.html'
@@ -55,7 +57,7 @@ module.exports = (grunt) ->
     sass:
       options:
         implementation: require 'node-sass'
-        outputStyle: 'expanded'
+        outputStyle: 'compressed'
         indentType: 'space'
         indentWidth: 2
         linefeed: 'lf'
