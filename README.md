@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FObserverOfTime%2Fobserveroftime.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FObserverOfTime%2Fobserveroftime.github.io?ref=badge_shield)
+
 ### Table of Contents
 
 * [Portfolio (coming soon)](https://observeroftime.github.io/portfolio/)
@@ -32,3 +34,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FObserverOfTime%2Fobserveroftime.github.io.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FObserverOfTime%2Fobserveroftime.github.io?ref=badge_large)
