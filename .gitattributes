@@ -1,0 +1,5 @@
+* text=auto
+
+*.css linguist-generated=true
+*.html linguist-generated=true
+

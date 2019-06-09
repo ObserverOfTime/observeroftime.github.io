@@ -1,7 +1,7 @@
 {
   "name": "observeroftime.github.io",
   "author": "ObserverOfTime",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
   "homepage": "https://observeroftime.github.io",
@@ -11,7 +11,7 @@
     "email": "chronobserver@disroot.org"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "grunt": "^1.0.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-concurrent": "^2.3.1",
@@ -21,9 +21,9 @@
     "grunt-sass": "^3.0.1",
     "grunt-stylelint": "^0.10.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "stylelint": "^9.9.0",
-    "stylelint-scss": "^3.5.4"
+    "stylelint-scss": "^3.8.0"
   },
   "scripts": {
     "build": "grunt concurrent:build",

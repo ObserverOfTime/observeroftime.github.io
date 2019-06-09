@@ -1,8 +1,8 @@
 module.exports = (grunt) ->
   paths =
     config:
-      puglint: './config/puglintrc.json'
-      stylelint: './config/stylelintrc.json'
+      puglint: '.pug-lintrc.json'
+      stylelint: '.stylelintrc.json'
     code:
       css: './styles/*.css'
       html:

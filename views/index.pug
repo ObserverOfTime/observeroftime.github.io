@@ -11,5 +11,118 @@ html
     +stylesheet('/styles/main.css')
     title Home ~ Observer of Time
   body#wrapper
-    include:markdown-it ../README.md
+    include:markdown-it(html) ../README.md
+    h3#accounts My Accounts
+    h4(title="I use these often") Main
+    ul
+      +acc(
+        'AUR', 'ObserverOfTime',
+        'https://aur.archlinux.org/account/ObserverOfTime/'
+      )
+      +acc(
+        'AniList', 'ObserverOfTime',
+        'https://anilist.co/user/ObserverOfTime/'
+      )
+      +acc(
+        'GitHub', 'ObserverOfTime',
+        'https://github.com/ObserverOfTime'
+      )
+      +acc(
+        'Reddit', '/u/ObserverOfTime',
+        'https://reddit.com/u/ObserverOfTime'
+      )
+      +acc(
+        'Twitter', '@chronobserver',
+        'https://twitter.com/chronobserver'
+      )
+      +acc(
+        'Steam', 'Observer of Time',
+        'https://steamcommunity.com/id/ObserverOfTime'
+      )
+    h4(title="I sometimes use these") Other
+    ul
+      +acc(
+        'Disqus', 'ObserverOfTime',
+        'https://disqus.com/by/ObserverOfTime/'
+      )
+      +acc(
+        'Fedora COPR', 'observeroftime',
+        'https://copr.fedorainfracloud.org/coprs/observeroftime/'
+      )
+      +acc(
+        'GitLab', 'ObserverOfTime',
+        'https://gitlab.com/ObserverOfTime'
+      )
+      +acc(
+        'Launchpad', 'chronobserver',
+        'https://launchpad.net/~chronobserver'
+      )
+      +acc(
+        'Lutris', 'ObserverOfTime',
+        'https://lutris.net/user/ObserverOfTime'
+      )
+      +acc(
+        'MangaUpdates', 'Observer of Time',
+        'https://www.mangaupdates.com/members.html?id=486239'
+      )
+      +acc(
+        'Simkl', 'Observer of Time',
+        'https://simkl.com/2334305/?invite-from=2334305'
+      )
+      +acc(
+        'Twitch', 'IAmNotAProPlayer',
+        'https://www.twitch.tv/iamnotaproplayer'
+      )
+      +acc(
+        'VNDB', 'chronobserver',
+        'https://vndb.org/u137678'
+      )
+      +acc(
+        'YouTube', 'Observer of Time',
+        'https://www.youtube.com/c/AvisMercurii'
+      )
+      - var appdb = 'https://appdb.winehq.org/objectManager.php'
+      +acc(
+        'Wine AppDB', 'ObserverOfTime',
+        `${appdb}?sClass=maintainerView&iId=400070`
+      )
+      +acc(
+        'Wine Forums', 'ObserverOfTime',
+        'https://forum.winehq.org/memberlist.php?mode=viewprofile&u=153660'
+      )
+    h4(title="I no longer use these") Abandoned
+    ul
+      - var bt = 'https://www.baka-tsuki.org/project/index.php'
+      +acc(
+        'Baka-Tsuki', 'User:Observer\_of\_Time',
+        `${bt}?title=User:Observer_of_Time`
+      )
+      +acc(
+        'BitBucket', 'chronobserver',
+        'https://bitbucket.org/chronobserver/'
+      )
+      +acc(
+        'CuriousCat', 'ObserverOfTime',
+        'https://curiouscat.me/ObserverOfTime'
+      )
+      +acc(
+        'MangaHelpers', 'Observer of Time',
+        'https://mangahelpers.com/forum/members/observer-of-time.196865/'
+      )
+      +acc(
+        'MyAnimeList', 'ObserverOfTime',
+        'https://myanimelist.net/profile/ObserverOfTime'
+      )
+      +acc(
+        'Reddit', '/u/Eilifur',
+        'https://reddit.com/u/Eilifur'
+      )
+      +acc(
+        'Tumblr', 'chronobserver',
+        'https://chronobserver.tumblr.com/'
+      )
+      +acc(
+        'UserStyles', 'Observer of Time',
+        'https://userstyles.org/users/368966'
+      )
 

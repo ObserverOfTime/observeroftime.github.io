@@ -13,6 +13,11 @@ mixin stylesheet(href)
 mixin favicon(href, type)
   link(href=href rel="shortcut icon" type=`image/${type}`)
 
+//- Home {{{
+mixin acc(desc, name, url)
+  li #{desc}: #[a(href=url) #{name}]
+//- }}}
+
 //- SciADVLists {{{
 mixin desc()
   p.desc
