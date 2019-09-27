@@ -7,6 +7,7 @@
 * [Discord Themes](https://observeroftime.github.io/DiscordThemes/)
   - [New Nihilism](https://observeroftime.github.io/DiscordThemes/NewNihilism/)
   - [Restore Titlebar](https://observeroftime.github.io/DiscordThemes/MiniThemes/RestoreTitlebar/)
+* [mpv scripts](https://observeroftime.github.io/mpv-scripts/)
 * [Transfer.js Docs](https://observeroftime.github.io/transfer.js/)
 * [SciADV Lists](https://observeroftime.github.io/SciADVLists/)
   - [Chaos;Head](https://observeroftime.github.io/SciADVLists/ChaosHeadMilk.html)
@@ -31,4 +32,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
