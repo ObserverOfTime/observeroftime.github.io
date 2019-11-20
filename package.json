@@ -1,14 +1,19 @@
 {
   "name": "observeroftime.github.io",
-  "author": "ObserverOfTime",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
+  "author": "ObserverOfTime <chronobserver@disroot.org>",
   "homepage": "https://observeroftime.github.io",
-  "repository": "git+https://github.com/ObserverOfTime/observeroftime.github.io.git",
+  "repository": "github:ObserverOfTime/observeroftime.github.io",
   "bugs": {
     "url": "https://github.com/ObserverOfTime/observeroftime.github.io/issues",
     "email": "chronobserver@disroot.org"
+  },
+  "scripts": {
+    "build": "grunt concurrent:build",
+    "dev": "grunt",
+    "lint": "grunt concurrent:lint"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -19,18 +24,14 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-puglint": "^1.0.0",
     "grunt-sass": "^3.1.0",
-    "grunt-stylelint": "^0.11.1",
+    "grunt-stylelint": "^0.12.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "node-sass": "^4.12.0",
-    "stylelint": "^10.1.0",
-    "stylelint-scss": "^3.11.1"
-  },
-  "scripts": {
-    "build": "grunt concurrent:build",
-    "dev": "grunt",
-    "lint": "grunt concurrent:lint"
+    "node-sass": "^4.13.0",
+    "stylelint": "^11.1.1",
+    "stylelint-scss": "^3.12.1"
   },
   "resolutions": {
-    "coffeescript": "^2.4.1"
+    "chokidar": "^3.0.0",
+    "unified": "^8.4.2"
   }
 }

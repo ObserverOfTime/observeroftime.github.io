@@ -26,10 +26,10 @@ mixin desc()
     span (Underlined = officially localized)
 
 mixin footer()
-  p: em
-    | The list does not include: fanmade stuff,
-    | soundtracks, artbooks, and any other merch.
-  p: a(style={color: "green"} href="..") Go back
+  p: em.
+    The list does not include: fanmade stuff,
+    soundtracks, artbooks, and any other merch.
+  p: a(style={color: 'green'} href="..") Go back
 
 mixin twitter(username, content)
   li: a.twitter(href=`https://twitter.com/${username}`
