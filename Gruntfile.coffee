@@ -8,11 +8,9 @@ module.exports = (grunt) ->
       html:
         root: './index.html'
         sciadv: './SciADVLists/*.html'
-        # portfolio: './portfolio/*.html'
       pug:
         root: './views/index.pug'
         sciadv: './views/SciADVLists/*.pug'
-        # portfolio: './views/portfolio/*.pug'
       scss:
         full: './scss/*.scss'
         part: './scss/partials/*.scss'
@@ -44,10 +42,7 @@ module.exports = (grunt) ->
       dist: files: [
         expand: true
         cwd: 'views'
-        src: [
-          '**/*.pug',
-          '!_mixins.pug'
-        ]
+        src: ['**/*.pug', '!_mixins.pug']
         dest: ''
         ext: '.html'
       ]
@@ -65,10 +60,7 @@ module.exports = (grunt) ->
       dist: files: [
         expand: true
         cwd: 'scss'
-        src: [
-          '**/*.scss',
-          '!partials/*.scss'
-        ]
+        src: ['**/*.scss', '!partials/*.scss']
         dest: 'styles'
         ext: '.css'
       ]

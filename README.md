@@ -1,12 +1,12 @@
 ### Table of Contents
 
-* [Portfolio (coming soon)](https://observeroftime.github.io/portfolio/)
+* [Portfolio](https://observeroftime.github.io/portfolio/)
 * [7 Segment Displays](https://observeroftime.github.io/7SegmentDisplays/)
   - [Benchmarks](https://observeroftime.github.io/7SegmentDisplays/BENCHMARKS.html)
   - [Contributing](https://observeroftime.github.io/7SegmentDisplays/CONTRIBUTING.html)
 * [Discord Themes](https://observeroftime.github.io/DiscordThemes/)
   - [New Nihilism](https://observeroftime.github.io/DiscordThemes/NewNihilism/)
-  - [Restore Titlebar](https://observeroftime.github.io/DiscordThemes/MiniThemes/RestoreTitlebar/)
+  - [Better Embeds](https://observeroftime.github.io/DiscordThemes/BetterEmbeds/)
 * [mpv scripts](https://observeroftime.github.io/mpv-scripts/)
 * [Transfer.js Docs](https://observeroftime.github.io/transfer.js/)
 * [SciADV Lists](https://observeroftime.github.io/SciADVLists/)
@@ -18,7 +18,7 @@
 ### License
 
 ```
-Copyright © 2019 ObserverOfTime
+Copyright © 2019-2020 ObserverOfTime
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
