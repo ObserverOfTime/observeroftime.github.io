@@ -32,6 +32,7 @@
   },
   "resolutions": {
     "chokidar": "^3.3.1",
+    "constantinople": "^4.0.1",
     "source-map-resolve": "^0.6.0",
     "unified": "^9.0.0"
   }
