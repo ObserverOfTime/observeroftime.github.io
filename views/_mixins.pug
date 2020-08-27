@@ -7,6 +7,9 @@ mixin generator()
 mixin lastmod()
   meta(http-equiv="Last-Modified" content=new Date().toGMTString())
 
+mixin google-site(code)
+  meta(name="google-site-verification" content=code)
+
 mixin stylesheet(href)
   link(href=href rel="stylesheet" type="text/css")
 
