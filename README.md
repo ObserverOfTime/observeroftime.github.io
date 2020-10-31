@@ -8,7 +8,6 @@
   - [New Nihilism](https://observeroftime.github.io/DiscordThemes/NewNihilism/)
   - [Better Embeds](https://observeroftime.github.io/DiscordThemes/BetterEmbeds/)
 * [mpv scripts](https://observeroftime.github.io/mpv-scripts/)
-* [Transfer.js Docs](https://observeroftime.github.io/transfer.js/)
 * [SciADV Lists](https://observeroftime.github.io/SciADVLists/)
   - [Chaos;Head](https://observeroftime.github.io/SciADVLists/ChaosHeadMilk.html)
   - [Steins;Gate](https://observeroftime.github.io/SciADVLists/SteinsGateMilk.html)
