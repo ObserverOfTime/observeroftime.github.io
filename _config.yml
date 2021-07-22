@@ -1,6 +1,0 @@
-exclude:
-  - scss/
-  - views/
-  - README.md
-  - package.json
-  - Gruntfile.coffee

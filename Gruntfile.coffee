@@ -4,16 +4,16 @@ module.exports = (grunt) ->
       puglint: '.pug-lintrc.json'
       stylelint: '.stylelintrc.json'
     code:
-      css: './styles/*.css'
+      css: 'build/styles/*.css'
       html:
-        root: './index.html'
-        sciadv: './SciADVLists/*.html'
+        root: 'build/index.html'
+        sciadv: 'build/SciADVLists/*.html'
       pug:
-        root: './views/index.pug'
-        sciadv: './views/SciADVLists/*.pug'
+        root: 'views/index.pug'
+        sciadv: 'views/SciADVLists/*.pug'
       scss:
-        full: './scss/*.scss'
-        part: './scss/partials/*.scss'
+        full: 'scss/*.scss'
+        part: 'scss/partials/*.scss'
       allFiles: -> @noPartials().concat [@scss.part]
       noPartials: -> Object.values(@html).concat [@css, @pug, @scss.full]
   pkg = require './package'
@@ -25,7 +25,7 @@ module.exports = (grunt) ->
         notify: false
         watchTask: true
         host: 'localhost'
-        server: './'
+        server: 'build'
         snippetOptions: rule:
           match: /<\/head>/i
           fn: (snippet) => snippet
@@ -43,12 +43,12 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'views'
         src: ['**/*.pug', '!_mixins.pug']
-        dest: ''
+        dest: 'build'
         ext: '.html'
       ]
     puglint: pug:
       options: extends: paths.config.puglint
-      src: ['./views/**/*.pug']
+      src: ['views/**/*.pug']
     sass:
       options:
         implementation: require 'node-sass'
@@ -61,7 +61,7 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'scss'
         src: ['**/*.scss', '!partials/*.scss']
-        dest: 'styles'
+        dest: 'build/styles'
         ext: '.css'
       ]
     stylelint: scss:

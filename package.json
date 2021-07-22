@@ -16,18 +16,20 @@
     "lint": "grunt concurrent:lint"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.4",
     "coffeescript": "^2.5.1",
     "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-concurrent": "^3.0.0",
     "grunt-contrib-pug": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-puglint": "^1.0.0",
     "grunt-sass": "^3.1.0",
-    "grunt-stylelint": "^0.16.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^6.0.1"
+  },
+  "optionalDependencies": {
+    "browser-sync": "^2.27.4",
+    "grunt-puglint": "^1.0.0",
+    "grunt-stylelint": "^0.16.0",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.20.1"
   },
