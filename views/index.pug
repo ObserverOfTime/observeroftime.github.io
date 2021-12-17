@@ -14,7 +14,7 @@ html
   body#wrapper
     include:markdown-it(html) ../README.md
     h3#accounts My Accounts
-    h4(title="I use these often") Main
+    h4#main(title="I use these often") Main
     ul
       +acc(
         'AUR', 'ObserverOfTime',
@@ -36,7 +36,7 @@ html
         'Twitter', '@chronobserver',
         'https://twitter.com/chronobserver'
       )
-    h4(title="I sometimes use these") Other
+    h4#other(title="I sometimes use these") Other
     ul
       +acc(
         'Disroot Git', 'chronobserver',
@@ -53,6 +53,10 @@ html
       +acc(
         'Launchpad', 'chronobserver',
         'https://launchpad.net/~chronobserver'
+      )
+      +acc(
+        'LinkedIn', 'yohane',
+        'https://www.linkedin.com/in/yohane/'
       )
       +acc(
         'Lutris', 'ObserverOfTime',
@@ -95,20 +99,12 @@ html
         'Wine Forums', 'ObserverOfTime',
         'https://forum.winehq.org/memberlist.php?mode=viewprofile&u=153660'
       )
-    h4(title="I no longer use these") Abandoned
+    h4#abandoned(title="I no longer use these") Abandoned
     ul
       - var bt = 'https://www.baka-tsuki.org/project/index.php'
       +acc(
         'Baka-Tsuki', 'User:Observer\_of\_Time',
         `${bt}?title=User:Observer_of_Time`
-      )
-      +acc(
-        'BitBucket', 'ObserverOfTime',
-        'https://bitbucket.org/ObserverOfTime/'
-      )
-      +acc(
-        'CuriousCat', 'ObserverOfTime',
-        'https://curiouscat.me/ObserverOfTime'
       )
       +acc(
         'Disqus', 'ObserverOfTime',
@@ -137,8 +133,4 @@ html
       +acc(
         'UserStyles', 'Observer of Time',
         'https://userstyles.org/users/368966'
-      )
-      +acc(
-        'OpenUserCSS', 'Observer of Time',
-        'https://openusercss.org/profile/5d5929b24526830c00527af5'
       )

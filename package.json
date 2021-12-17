@@ -1,6 +1,6 @@
 {
   "name": "observeroftime.github.io",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
   "author": "ObserverOfTime <chronobserver@disroot.org>",
@@ -16,7 +16,7 @@
     "lint": "grunt concurrent:lint"
   },
   "devDependencies": {
-    "coffeescript": "^2.5.1",
+    "coffeescript": "^2.6.1",
     "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-concurrent": "^3.0.0",
@@ -24,21 +24,21 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.1.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.0"
   },
   "optionalDependencies": {
-    "browser-sync": "^2.27.4",
+    "browser-sync": "^2.27.7",
     "grunt-puglint": "^1.0.0",
-    "grunt-stylelint": "^0.16.0",
-    "stylelint": "^13.13.1",
-    "stylelint-scss": "^3.20.1"
+    "grunt-stylelint": "^0.17.0",
+    "stylelint": "^14.1.0",
+    "stylelint-scss": "^4.0.1"
   },
   "resolutions": {
     "chokidar": "^3.5.2",
     "constantinople": "^4.0.1",
     "lodash": "^4.17.21",
-    "object-path": "^0.11.5",
+    "object-path": "^0.11.8",
     "source-map-resolve": "^0.6.0",
-    "unified": "^10.0.1"
+    "unified": "^10.1.1"
   }
 }
