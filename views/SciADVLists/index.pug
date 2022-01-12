@@ -20,4 +20,4 @@ html
       ]
     nav#lists
       each val in titles
-        a.milk(href=`${val.replace(';', '')}Milk.html`)= val
+        a.milk.link(href=`${val.replace(';', '')}Milk.html`)= val

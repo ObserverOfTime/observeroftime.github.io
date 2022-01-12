@@ -1,0 +1,46 @@
+@import "_variables"
+
+#wrapper
+  background-color: color-bg
+  color: color-fg
+  font-size: larger
+  font-family: "AvdiraRegular", sans-serif
+  h1 { font-size: xx-large }
+  h2 { font-size: x-large }
+  li { padding-bottom: 2px }
+
+.desc
+  font-size: medium
+  font-weight: bold
+  margin-top: -5px
+  > span:last-child
+    text-decoration: underline
+
+ .category
+  font-size: x-large
+  font-weight: 600
+  color: inherit
+  text-decoration: none
+
+.translated
+  font-weight: bold
+
+.localized
+  @extend .translated
+  text-decoration: underline
+
+.note
+  display: inline-block
+  padding-left: 8px
+  font-weight: normal
+  font-style: italic
+
+.milk
+  display: block
+  padding: 5px
+
+.link
+    color: color-link
+
+for status, color in status-colors
+  .{status} .note { color: color }

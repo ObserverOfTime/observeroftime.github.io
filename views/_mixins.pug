@@ -35,6 +35,6 @@ mixin footer()
   p: a(style={color: 'green'} href="..") Go back
 
 mixin twitter(username, content)
-  li: a.twitter(href=`https://twitter.com/${username}`
-                rel="noopener" target="_blank")= content
+  li: a.link(href=`https://twitter.com/${username}`
+             rel="noopener" target="_blank")= content
 //- }}}

@@ -1,6 +1,6 @@
 {
   "name": "observeroftime.github.io",
-  "version": "0.7.6",
+  "version": "0.8.0",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
   "author": "ObserverOfTime <chronobserver@disroot.org>",
@@ -12,33 +12,28 @@
   },
   "scripts": {
     "build": "grunt concurrent:build",
-    "dev": "grunt",
-    "lint": "grunt concurrent:lint"
+    "lint": "grunt concurrent:lint",
+    "serve": "sirv build --dev"
   },
   "devDependencies": {
     "coffeescript": "^2.6.1",
     "grunt": "^1.4.1",
-    "grunt-browser-sync": "^2.2.0",
     "grunt-concurrent": "^3.0.0",
     "grunt-contrib-pug": "^3.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^3.1.0",
-    "jstransformer-markdown-it": "^2.1.0",
-    "node-sass": "^7.0.0"
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-puglint": "^1.0.0",
+    "grunt-stylint": "^0.2.0",
+    "jstransformer-markdown-it": "^2.1.0"
   },
   "optionalDependencies": {
-    "browser-sync": "^2.27.7",
-    "grunt-puglint": "^1.0.0",
-    "grunt-stylelint": "^0.17.0",
-    "stylelint": "^14.1.0",
-    "stylelint-scss": "^4.0.1"
+    "sirv-cli": "^2.0.1"
   },
   "resolutions": {
     "chokidar": "^3.5.2",
     "constantinople": "^4.0.1",
     "lodash": "^4.17.21",
-    "object-path": "^0.11.8",
-    "source-map-resolve": "^0.6.0",
-    "unified": "^10.1.1"
+    "source-map-resolve":
+      "lydell/source-map-resolve#next",
+    "stylus": "^0.56.0"
   }
 }

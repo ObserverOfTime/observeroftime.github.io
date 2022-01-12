@@ -1,87 +1,38 @@
 module.exports = (grunt) ->
-  paths =
-    config:
-      puglint: '.pug-lintrc.json'
-      stylelint: '.stylelintrc.json'
-    code:
-      css: 'build/styles/*.css'
-      html:
-        root: 'build/index.html'
-        sciadv: 'build/SciADVLists/*.html'
-      pug:
-        root: 'views/index.pug'
-        sciadv: 'views/SciADVLists/*.pug'
-      scss:
-        full: 'scss/*.scss'
-        part: 'scss/partials/*.scss'
-      allFiles: -> @noPartials().concat [@scss.part]
-      noPartials: -> Object.values(@html).concat [@css, @pug, @scss.full]
-  pkg = require './package'
-
   grunt.initConfig
-    browserSync: serve:
-      options:
-        ui: false
-        notify: false
-        watchTask: true
-        host: 'localhost'
-        server: 'build'
-        snippetOptions: rule:
-          match: /<\/head>/i
-          fn: (snippet) => snippet
-      bsFiles: src: paths.code.noPartials()
-    bsReload:
-      css: reload: ['main.css', 'sciadv.css']
-      html: reload: Object.values paths.code.html
     concurrent:
       options: logConcurrentOutput: true
-      lint: ['stylelint', 'puglint']
-      build: ['sass', 'pug']
+      lint: ["stylint", "puglint"]
+      build: ["stylus", "pug"]
     pug:
-      options: pretty: true
+      options:
+        pretty: true
+        filters:
+          img2obj: (text) -> text.replace(
+            /<img .*src=(.+?)>/g,
+            "<object type=\"image/svg+xml\" data=$1></object>"
+          )
       dist: files: [
         expand: true
-        cwd: 'views'
-        src: ['**/*.pug', '!_mixins.pug']
-        dest: 'build'
-        ext: '.html'
+        cwd: "views"
+        src: ["**/*.pug", "!_mixins.pug"]
+        dest: "build"
+        ext: ".html"
       ]
     puglint: pug:
-      options: extends: paths.config.puglint
-      src: ['views/**/*.pug']
-    sass:
-      options:
-        implementation: require 'node-sass'
-        outputStyle: 'compressed'
-        indentType: 'space'
-        indentWidth: 2
-        linefeed: 'lf'
-        sourceMap: false
-      dist: files: [
-        expand: true
-        cwd: 'scss'
-        src: ['**/*.scss', '!partials/*.scss']
-        dest: 'build/styles'
-        ext: '.css'
-      ]
-    stylelint: scss:
-      options:
-        configFile: paths.config.stylelint
-        formatter: 'string'
-        failOnError: true
-        syntax: 'scss'
-      src: Object.values paths.code.scss
-    watch:
-      options: spawn: false
-      pug:
-        files: Object.values paths.code.pug
-        tasks: ['pug:dist', 'bsReload:html']
-      scss:
-        files: paths.code.scss.full
-        tasks: ['sass:dist', 'bsReload:css']
+      options: extends: ".pug-lintrc.json"
+      src: ["views/**/*.pug"]
+    stylus: compile:
+      options: compress: true
+      files:
+        "build/styles/main.css": "stylus/main.styl"
+        "build/styles/sciadv.css": "stylus/sciadv.styl"
+    stylint:
+      options: configFile: ".stylintrc.json"
+      src: ["stylus/*.styl"]
 
-  Object.keys(pkg.devDependencies).filter (dep) =>
-    grunt.loadNpmTasks dep if dep.startsWith 'grunt-'
+  Object.keys((require "./package").devDependencies).filter (dep) =>
+    grunt.task.loadNpmTasks dep if dep.startsWith "grunt-"
 
-  grunt.registerTask 'default', ['browserSync', 'watch']
+  grunt.registerTask "default", ["concurrent:build"]
   return
