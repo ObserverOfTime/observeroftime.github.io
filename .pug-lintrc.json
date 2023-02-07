@@ -8,7 +8,7 @@
   "disallowSpacesInsideAttributeBrackets": true,
   "disallowSpecificTags": ["b", "u"],
   "disallowTrailingSpaces": true,
-  "maximumLineLength": 80,
+  "maximumLineLength": 120,
   "requireClassLiteralsBeforeAttributes": true,
   "requireIdLiteralsBeforeAttributes": true,
   "requireLineFeedAtFileEnd": true,

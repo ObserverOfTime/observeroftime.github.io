@@ -1,6 +1,6 @@
 {
   "name": "observeroftime.github.io",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
   "author": "ObserverOfTime <chronobserver@disroot.org>",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "coffeescript": "^2.7.0",
-    "grunt": "^1.5.3",
+    "grunt": "^1.6.1",
     "grunt-concurrent": "^3.0.0",
     "grunt-contrib-pug": "^3.0.0",
     "grunt-contrib-stylus": "^1.2.0",
