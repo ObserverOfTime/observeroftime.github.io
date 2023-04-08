@@ -1,18 +1,35 @@
 name: Build and Deploy
-on: [push]
+
+on:
+  push:
+    branches: ['master']
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.1
-      - name: Install & build
-        run: |
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Build website
+        run: |-
           yarn && yarn build
           cp LICENSE.txt build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          branch: gh-pages
-          folder: build
-          single-commit: true
+          path: build
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

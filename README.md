@@ -18,5 +18,5 @@
 
 <a href="https://github.com/anuraghazra/github-readme-stats" rel="noopener noreferrer" style="display:inline-block">
   <div><img alt="Stats" src="https://github-readme-stats.vercel.app/api?username=ObserverOfTime&show_icons=true&theme=gruvbox&hide_rank=true&hide_border=true&hide_title=true" width="350"></div>
-  <div style="margin-top:-35px"><img alt="Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ObserverOfTime&layout=compact&theme=gruvbox&langs_count=8&exclude_repo=home.files&hide_border=true&hide_title=true"></div>
+  <div style="margin-top:-25px"><img alt="Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ObserverOfTime&layout=compact&theme=gruvbox&langs_count=8&exclude_repo=home.files&hide_border=true&hide_title=true" width="350"></div>
 </a>
