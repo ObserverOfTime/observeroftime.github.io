@@ -1,6 +1,6 @@
 {
   "name": "observeroftime.github.io",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
   "author": "ObserverOfTime <chronobserver@disroot.org>",
@@ -13,6 +13,7 @@
   "scripts": {
     "build": "grunt concurrent:build",
     "lint": "grunt concurrent:lint",
+    "export": "resume export -t relaxed",
     "serve": "sirv build --dev"
   },
   "devDependencies": {
@@ -26,6 +27,8 @@
     "jstransformer-markdown-it": "^3.0.0"
   },
   "optionalDependencies": {
+    "jsonresume-theme-relaxed": "^0.1.1",
+    "resume-cli": "^3.0.8",
     "sirv-cli": "^2.0.2"
   },
   "resolutions": {

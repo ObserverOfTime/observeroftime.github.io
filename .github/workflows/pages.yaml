@@ -6,7 +6,7 @@ on:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -25,7 +25,12 @@ jobs:
       - name: Build website
         run: |-
           yarn && yarn build
+          curl -Lfo resume.json $GIST
+          mkdir -p build/resume
+          yarn export build/resume/index.html
           cp LICENSE.txt build
+        env:
+          GIST: https://gist.githubusercontent.com/ObserverOfTime/c1d5d812134aa2356ee190a741b4e39e/raw/resume.json
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
