@@ -1,6 +1,6 @@
 {
   "name": "observeroftime.github.io",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
   "author": "ObserverOfTime <chronobserver@disroot.org>",
@@ -27,7 +27,7 @@
     "jstransformer-markdown-it": "^3.0.0"
   },
   "optionalDependencies": {
-    "jsonresume-theme-relaxed": "^0.1.1",
+    "jsonresume-theme-relaxed": "^0.1.3",
     "resume-cli": "^3.0.8",
     "sirv-cli": "^2.0.2"
   },
@@ -35,6 +35,6 @@
     "chokidar": "^3.5.3",
     "constantinople": "^4.0.1",
     "lodash": "^4.17.21",
-    "stylus": "^0.59.0"
+    "stylus": "^0.61.0"
   }
 }
