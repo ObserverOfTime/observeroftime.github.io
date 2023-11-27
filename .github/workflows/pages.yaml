@@ -21,18 +21,19 @@ jobs:
       url: ${{steps.deployment.outputs.page_url}}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
       - name: Build website
         run: |-
-          yarn && yarn build
-          curl -Lfo resume.json $GIST
-          mkdir -p build/resume
-          yarn export build/resume/index.html
+          npm run build
           cp LICENSE.txt build
-        env:
-          GIST: https://gist.githubusercontent.com/ObserverOfTime/c1d5d812134aa2356ee190a741b4e39e/raw/resume.json
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build
       - name: Deploy to GitHub Pages

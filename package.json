@@ -1,11 +1,18 @@
 {
   "name": "observeroftime.github.io",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "My GitHub Page",
   "license": "Apache-2.0",
-  "author": "ObserverOfTime <chronobserver@disroot.org>",
+  "private": true,
   "homepage": "https://observeroftime.github.io",
-  "repository": "github:ObserverOfTime/observeroftime.github.io",
+  "author": {
+    "name": "ObserverOfTime",
+    "email": "chronobserver@disroot.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ObserverOfTime/observeroftime.github.io.git"
+  },
   "bugs": {
     "url": "https://github.com/ObserverOfTime/observeroftime.github.io/issues",
     "email": "chronobserver@disroot.org"
@@ -13,7 +20,6 @@
   "scripts": {
     "build": "grunt concurrent:build",
     "lint": "grunt concurrent:lint",
-    "export": "resume export -t relaxed",
     "serve": "sirv build --dev"
   },
   "devDependencies": {
@@ -27,14 +33,13 @@
     "jstransformer-markdown-it": "^3.0.0"
   },
   "optionalDependencies": {
-    "jsonresume-theme-relaxed": "^0.1.3",
-    "resume-cli": "^3.0.8",
     "sirv-cli": "^2.0.2"
   },
-  "resolutions": {
-    "chokidar": "^3.5.3",
-    "constantinople": "^4.0.1",
-    "lodash": "^4.17.21",
-    "stylus": "^0.61.0"
+  "overrides": {
+    "braces": "^3.0.2",
+    "glob-parent": "^6.0.2",
+    "markdown-it": "markdown-it/markdown-it#bc7cf62",
+    "mout": "^1.2.4",
+    "yargs-parser": "5.0.1"
   }
 }
