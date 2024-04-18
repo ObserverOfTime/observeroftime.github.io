@@ -2,8 +2,7 @@
 
 * [Portfolio](https://observeroftime.github.io/portfolio/)
 * [7 Segment Displays](https://observeroftime.github.io/7SegmentDisplays/)
-  - [Benchmarks](https://observeroftime.github.io/7SegmentDisplays/BENCHMARKS.html)
-  - [Contributing](https://observeroftime.github.io/7SegmentDisplays/CONTRIBUTING.html)
+* [KBigInt](https://observeroftime.github.io/kbigint/)
 * [Tachiyomi Extensions](https://observeroftime.github.io/tachiyomi-extensions/)
 * [mpv scripts](https://observeroftime.github.io/mpv-scripts/)
 * [SciADV Lists](https://observeroftime.github.io/SciADVLists/)

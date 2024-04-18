@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: ['master']
+    branches: [master]
 
 concurrency:
   group: pages
@@ -25,7 +25,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
       - name: Install dependencies
         run: npm install
       - name: Build website
@@ -37,9 +37,9 @@ jobs:
           mkdir build/.well-known
           printf '${{vars.DH_ID}}' > $_/discord
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: build
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
