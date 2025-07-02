@@ -20,7 +20,7 @@
   "scripts": {
     "build": "grunt concurrent:build",
     "lint": "grunt concurrent:lint",
-    "serve": "sirv build --dev"
+    "serve": "sirv build --host --dev"
   },
   "devDependencies": {
     "coffeescript": "^2.7.0",
@@ -33,12 +33,13 @@
     "jstransformer-markdown-it": "^3.0.0"
   },
   "optionalDependencies": {
-    "sirv-cli": "^2.0.2"
+    "sirv-cli": "^3.0.1"
   },
   "overrides": {
     "braces": "^3.0.2",
     "glob-parent": "^6.0.2",
-    "markdown-it": "markdown-it/markdown-it#bc7cf62",
+    "markdown-it": "^14.1.0",
+    "micromatch": "^4.0.8",
     "mout": "^1.2.4",
     "yargs-parser": "5.0.1"
   }
