@@ -3,7 +3,7 @@
 * [Portfolio](https://observeroftime.github.io/portfolio/)
 * [7 Segment Displays](https://observeroftime.github.io/7SegmentDisplays/)
 * [KBigInt](https://observeroftime.github.io/kbigint/)
-* [Tachiyomi Extensions](https://observeroftime.github.io/tachiyomi-extensions/)
+* [Tachiyomi Extensions](https://observeroftime.frama.io/tachiyomi-extensions/)
 * [mpv scripts](https://observeroftime.github.io/mpv-scripts/)
 * [SciADV Lists](https://observeroftime.github.io/SciADVLists/)
   - [Chaos;Head](https://observeroftime.github.io/SciADVLists/ChaosHeadMilk.html)
