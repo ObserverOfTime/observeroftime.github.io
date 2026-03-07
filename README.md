@@ -1,6 +1,7 @@
 ### Table of Contents
 
 * [Portfolio](https://observeroftime.github.io/portfolio/)
+* [Malspam Analysis](https://observeroftime.github.io/malspam-analysis/)
 * [7 Segment Displays](https://observeroftime.github.io/7SegmentDisplays/)
 * [KBigInt](https://observeroftime.github.io/kbigint/)
 * [Tachiyomi Extensions](https://observeroftime.frama.io/tachiyomi-extensions/)
