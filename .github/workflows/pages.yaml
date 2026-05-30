@@ -36,10 +36,13 @@ jobs:
         run: |-
           mkdir build/.well-known
           printf '${{vars.DH_ID}}' > $_/discord
+      - name: Add robots.txt
+        run: printf '${{vars.ROBOTS}}' > build/robots.txt
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: build
+          include-hidden-files: true
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
